@@ -1,0 +1,16 @@
+name: ollama
+services:
+    ollama:
+        volumes:
+            - ollama:/root/.ollama
+            - ../Models/20250210-llama3.2-3b-lora-aim/:/customModel/
+            - ./Modelfile:/Modelfile
+        ports:
+            - 11434:11434
+        container_name: ollama
+        image: ollama/ollama
+volumes:
+    ollama:
+        # external: true
+        name: ollama
+        

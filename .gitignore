@@ -169,3 +169,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# NAS configs
+TrainingScripts/nas_args.txt
+Data/
+Models/*
+!Models/.gitignore
